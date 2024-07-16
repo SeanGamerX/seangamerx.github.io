@@ -1,7 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicBrainAI LLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Welcome to MagicBrainAI LLC</h1>
+        <p>Your partner in AI innovation</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h2>About Us</h2>
+            <p>MagicBrainAI LLC specializes in cutting-edge artificial intelligence solutions that transform businesses.</p>
+        </div>
+        <button onclick="displayMessage()">Click Me!</button>
+        <div id="output"></div>
+    </div>
+    <script>
+        function displayMessage() {
+            const outputDiv = document.getElementById('output');
+            outputDiv.textContent = 'Hello from MagicBrainAI LLC!';
+        }
+    </script>
 </body>
 </html>
